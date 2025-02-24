@@ -3,12 +3,14 @@ package com.mnhyim.haxxernyius
 import io.ktor.client.HttpClient
 import io.ktor.client.request.get
 import io.ktor.client.statement.bodyAsText
+import org.koin.core.component.KoinComponent
+import org.koin.core.component.inject
 
-class TestKtor {
-    private val client = HttpClient()
+class TestKtor() : KoinComponent {
+    private val httpClient: HttpClient by inject()
 
     suspend fun greeting(): String {
-        val response = client.get("https://ktor.io/docs/")
+        val response = httpClient.get("https://ktor.io/docs/")
         return response.bodyAsText()
     }
 }
