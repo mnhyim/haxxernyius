@@ -1,7 +1,6 @@
 package com.mnhyim.haxxernyius.data.network
 
 import com.mnhyim.haxxernyius.data.network.dto.StoryDto
-import io.ktor.client.statement.HttpResponse
 
 interface HackerNewsApi {
 

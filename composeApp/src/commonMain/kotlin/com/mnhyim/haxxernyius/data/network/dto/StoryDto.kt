@@ -7,7 +7,7 @@ data class StoryDto(
     val id: Long,
     val by: String,
     val score: Int,
-    val time: Double,
+    val time: Long,
     val title: String,
     val type: String,
     val url: String? = null,

@@ -77,7 +77,9 @@ kotlin {
             implementation(libs.ktor.client.core)
             implementation(libs.ktor.client.content.negotiation)
             implementation(libs.ktor.serialization.kotlinx.json)
-            implementation("co.touchlab:kermit:2.0.4") //Add latest version
+            implementation("co.touchlab:kermit:2.0.4")
+            implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.6.2")
+
         }
         wasmJsMain.dependencies {
             implementation(libs.ktor.client.js)
